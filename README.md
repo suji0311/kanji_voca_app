@@ -1,4 +1,5 @@
 # 일본어 가나·단어 연습장
+https://suji0311.github.io/kanji_voca_app/
 
 브라우저에서 바로 열어 사용할 수 있는 일본어 가나와 단어 연습 도구입니다. 별도 서버나 빌드 과정 없이 `index.html` 또는 `voca.html`을 실행하면 됩니다.
 
