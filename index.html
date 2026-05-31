@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가나 획순 연습</title>
+<link rel="stylesheet" href="kanji.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>가나 획순 연습</h1>
+  </div>
+
+  <div style="display:flex; gap:10px;">
+    <a href="index.html" class="nav-btn">가나 연습</a>
+    <a href="voca.html" class="nav-btn">단어장</a>
+  </div>
+
+  <div class="subtitle" id="progressInfo">0 / 0 완료</div>
+</header>
+
+<div class="category-tabs" id="categoryTabs"></div>
+
+<div class="main">
+  <div class="kanji-list" id="kanjiList"></div>
+
+  <div class="practice-area" id="practiceArea">
+    <div class="empty-state">
+      <div class="big-char">あ</div>
+      <div>왼쪽에서 가나를 선택하세요</div>
+    </div>
+  </div>
+</div>
+
+<div class="animate-overlay" id="animateOverlay">
+  <div class="animate-box">
+    <h2>획순 보기</h2>
+    <div class="animate-kanji" id="animateKanjiChar"></div>
+    <div class="animate-canvas-wrap">
+      <div class="animate-guide" id="animateGuide"></div>
+      <canvas id="animateCanvas" width="220" height="220"></canvas>
+    </div>
+    <div class="stroke-counter" id="strokeCounter">획 1 / ?</div>
+    <div class="animate-controls">
+      <button class="btn btn-outline" onclick="prevStroke()">◀ 이전</button>
+      <button class="btn btn-gold" onclick="playAnimation()">▶ 재생</button>
+      <button class="btn btn-outline" onclick="nextStroke()">다음 ▶</button>
+    </div>
+    <br>
+    <button class="btn btn-primary" onclick="closeAnimate()" style="width:100%">× 닫기</button>
+  </div>
+</div>
+
+<script src="kanji.js"></script>
+</body>
+</html>
